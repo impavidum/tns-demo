@@ -13,7 +13,7 @@ const Model = () => {
         camera-controls
         auto-rotate
         ar
-        ar-placement="floor, wall"
+        ar-placement="wall"
       ></model-viewer>
     </div>
   );
