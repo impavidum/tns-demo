@@ -7,6 +7,7 @@ export default function Home() {
       <script
         type="module"
         src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+        async
       ></script>
     </main>
   );
