@@ -9,7 +9,7 @@ const Model = () => {
         ios-src="/art.usdz"
         poster="/art.jpg"
         alt="A 3D model of an astronaut"
-        shadow-intensity="1"
+        shadow-intensity="0"
         camera-controls
         auto-rotate
         ar
