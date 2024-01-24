@@ -5,9 +5,9 @@ const Model = () => {
     <div id="card">
       <model-viewer
         id="model-viewer"
-        src="/art.glb"
-        ios-src="/art.usdz"
-        poster="/art.jpg"
+        src="/portfolio_test.glb"
+        ios-src="/portfolio_test.usdz"
+        poster="/portfolio_test.png"
         alt="A 3D model of an astronaut"
         shadow-intensity="0"
         camera-controls
