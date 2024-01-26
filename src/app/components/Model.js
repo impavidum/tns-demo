@@ -1,33 +1,50 @@
 "use client";
 
 const Model = () => {
+  
   return (
-    <div id="card">
+    <div>
+
+      {/* Chalk Painting */}
       <model-viewer
-        id="model-viewer"
         src="/art.glb"
         ios-src="/art.usdz"
         poster="/art.jpg"
         alt="A 3D model of an astronaut"
         shadow-intensity="0"
         camera-controls
-        auto-rotate
         ar
         ar-placement="wall"
+        touch-action="pan-y"
+        disable-pan
+        skybox-image="/art.jpg"
+        exposure="4"
+        min-camera-orbit="-55deg 45deg auto"
+        max-camera-orbit="55deg 120deg auto"
+        tone-mapping="commerce"
       ></model-viewer>
+  
+      {/* Owl Painting */}
       <model-viewer
-        id="model-viewer"
-        src="/owl4.glb"
-        ios-src="/owl.usdz"
-        poster="/owl.jpg"
+        src="/Owl.glb"
+        ios-src="/OwlFramed.usdz"
+        orientation="90deg 0deg 90deg"
+        poster="/Owl.jpg"
         alt="A 3D model of an astronaut"
         shadow-intensity="0"
         camera-controls
-        auto-rotate
         ar
         ar-placement="wall"
+        disable-pan
+        skybox-image="/Owl.jpg"
+        exposure="4"
+        touch-action="pan-y"
+        min-camera-orbit="-55deg 45deg auto"
+        max-camera-orbit="55deg 120deg auto"
+        tone-mapping="commerce"
       ></model-viewer>
     </div>
+   
   );
 };
 

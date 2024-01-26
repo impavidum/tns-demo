@@ -8,6 +8,40 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  margin: 1em;
+  padding: 0;
+  font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
+  color: #244376;
+}
+
+model-viewer {
+  margin: 30px auto 50px auto;
+  width: 100%;
+  height: 400px;
+  --poster-color: #ffffff00;
+}
+
+.heading {
+  margin: 30px auto;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+@media (min-width: 500px) {
+  model-viewer {
+    width: 50%;
+  }
+  .heading {
+    width: 50%;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,41 +50,9 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-body {
-  margin: 1em;
-  padding: 0;
-  font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
-  color: #244376;
-}
-
-#card {
-  margin: 3em auto;
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  border-radius: 6px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-
-model-viewer {
-  width: 100%;
-  height: 400px;
-  --poster-color: #ffffff00;
-}
