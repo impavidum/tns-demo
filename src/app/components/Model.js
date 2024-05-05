@@ -3,7 +3,7 @@
 const Model = () => {
   
   return <model-viewer
-        src="/tns-1.glb"
+        src="/tns_frame_black.glb"
         ios-src="/tns.usdz"
         // poster="/art.jpg"
         orientation="180deg 0deg 0deg"
